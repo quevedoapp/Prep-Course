@@ -53,7 +53,7 @@ function saludo(idioma) {
   } else if (idioma === 'ingles') {
     return 'Hello!';
   } else {
-    return 'Hola';
+    return 'Hola!';
   }
 }
 
@@ -68,15 +68,22 @@ function colors(color) {
   switch (color) {
     case "blue":
       return 'This is blue';
+      break;
 
     case "red":
       return 'This is red';
+      break;
 
     case "green":
       return "This is green";
+      break;
 
     case "orange":
       return "This is orange"
+      break;
+
+      default: 
+      return "Color not found"
   }
 
 
@@ -140,7 +147,7 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
 
-  if (num1 > num2 && num1 > num3) return'numero 1 es mayor';
+  if (num1 > num2 && num1 > num3) return'numero 1 es mayor y positivo';
   if (num1 < 0 || num2 < 0 || num3 < 0) return 'Hay negativos';
   if (num3 > num1 && num3 > num2 ) return num3 + 1;
   if (num1 === 0 || num2 === 0 || num3 ===0) return 'Error';
@@ -162,8 +169,8 @@ function esVerdadero(valor) {
   //Escribe tu código aquí
   if (valor === true){
     return 'Soy verdadero';
-} else if (valor === falso){
-    return 'Soy false';
+} else if (valor === false){
+    return 'Soy falso';
 }
 
 }
@@ -179,11 +186,11 @@ function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
 
-  if(numero > 99){
+  if(numero > 99 && numero < 1000){
     return true;
-} else if (numero < 99 ){
+} else {
     return false;}
-    
+
 }
 
 function doWhile(numero) {
