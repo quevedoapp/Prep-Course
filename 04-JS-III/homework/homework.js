@@ -70,7 +70,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return palabras.join();
+  return palabras.join("");
 }
 
 
@@ -103,7 +103,7 @@ function agregarNumeros(numeros) {
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
-  // Tu código:
+  // Tu código: 
 }
 
 
@@ -111,7 +111,15 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-}
+  var grande = numeros[0];
+
+  for (var i = 0; i < numeros.length; i++){
+    if (numeros[i] > grande){
+      grande = numeros[i];
+    }
+  } return grande;
+
+} 
 
 
 function multiplicarArgumentos() {
