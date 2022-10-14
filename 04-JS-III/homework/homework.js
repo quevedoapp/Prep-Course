@@ -129,11 +129,11 @@ function multiplicarArgumentos() {
   // Escribe tu código aquí:
 
   if (arguments.length < 1) return 0;
-  var total = 1;
+  var multiplicar = 1;
   for (var i = 0; i < arguments.length; i++) {
-    total = total * arguments[i];
+    multiplicar = multiplicar * arguments[i];
   }
-  return total;
+  return multiplicar;
 
 }
 
