@@ -109,6 +109,8 @@ function tienePropiedad (objeto, propiedad) {
 }
 
 
+
+
 }
 
 function verificarPassword (usuario, password) {
